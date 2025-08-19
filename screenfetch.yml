@@ -1,4 +1,3 @@
-```yml
 ---
 - name: Run screenfetch and get output
   hosts: all
@@ -30,4 +29,3 @@
           --------- Output from {{ inventory_hostname }} ---------
           {{ screenfetch_output.stdout }}
       become: no  # Don't need root privileges for this task
-```
