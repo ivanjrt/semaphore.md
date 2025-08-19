@@ -1,0 +1,12 @@
+---
+- name: Run 'cat /etc/os-release' on all servers
+  hosts: all # Group of machines targeting in `/etc/ansible/hosts` or you cone can use `all`
+  gather_facts: no
+
+  tasks:
+    - name: Get OS release information # name of the task
+      command: cat /etc/os-release     # command being sent
+      register: os_release             # register
+
+    - name: Print the OS release information
+      debug: var=os_release.stdout_lines
