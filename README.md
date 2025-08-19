@@ -1,1 +1,3 @@
 # semaphore.md
+WIP
+This will hold templates for Semaphore...
