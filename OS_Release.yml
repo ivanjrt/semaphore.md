@@ -1,12 +1,20 @@
 ---
 - name: Run 'cat /etc/os-release' on all servers
-  hosts: all # Group of machines targeting in `/etc/ansible/hosts` or you cone can use `all`
+  hosts: all
   gather_facts: no
 
   tasks:
-    - name: Get OS release information # name of the task
-      command: cat /etc/os-release     # command being sent
-      register: os_release             # register
+    - name: Get OS release information
+      command: cat /etc/os-release
+      register: os_release
+
+    - name: Set fact for PRETTY_NAME
+      set_fact:
+        pretty_name: "{{ item.split('=')[1].strip(\"'\") }}"
+      loop: "{{ os_release.stdout_lines }}"
+      when: "'PRETTY_NAME' in item"
 
     - name: Print the OS release information
-      debug: var=os_release.stdout_lines
+      debug:
+        var: pretty_name
+
