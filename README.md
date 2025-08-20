@@ -21,13 +21,19 @@ dockerbox ansible_host=10.10.9.1
 n8nbox ansible_host=10.10.10.9.2
 monitorbox ansible_host=10.10.10.3
 ```
+</br>
 
 # Step 4: Repository
+* **Github** option
 create a GitHub / point to a GitHub </br>
 Copy the git location from GitHub:</br>
 <img width="443" height="369" alt="image" src="https://github.com/user-attachments/assets/a76c5afe-b6e6-4ac8-bed0-e1c284ba9b10" /></br>
 The branch it will most likely be `main`</br>
-<img width="1043" height="439" alt="image" src="https://github.com/user-attachments/assets/2ed0b5d0-b3e4-47a0-b588-96afc0929c31" /></br>
+<img width="1043" height="439" alt="image" src="https://github.com/user-attachments/assets/2ed0b5d0-b3e4-47a0-b588-96afc0929c31" /></br></br>
+
+* **Local** repo option (since we have bound the drive in the yml file)</br>
+<img width="452" height="398" alt="image" src="https://github.com/user-attachments/assets/36c954a6-768e-4b6f-ba15-df3d024cf3e5" /></br></br>
+
 
 # Task Templates
 New Template, select `Ansible`</br>
