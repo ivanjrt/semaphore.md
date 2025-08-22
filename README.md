@@ -12,7 +12,7 @@ For some reason, I don't quite know, they said it's a must </br>
 just make sure that the content has the curly brackets `{}`</br>
 <img width="1319" height="881" alt="image" src="https://github.com/user-attachments/assets/f9b5529d-423b-497a-8ad1-87a085215439" /></br>
 
-@ Step 3: Inventory (add the user credentials)
+@ Step 3: Inventory and add the user credentials
 <img width="1047" height="683" alt="image" src="https://github.com/user-attachments/assets/cae74a28-a9bc-42ea-be6e-d2442dc80834" /></br>
 you can also do in this fashion so you can see the actual name of the machines
 ```
